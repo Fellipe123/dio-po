@@ -26,8 +26,8 @@ public class BootcampView extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(null);
 
-        JLabel nomeDevLabel = new JLabel("Nome do Desenvolvedor:");
-        nomeDevLabel.setBounds(10, 10, 100, 25);
+        JLabel nomeDevLabel = new JLabel("Nome:");
+        nomeDevLabel.setBounds(80, 10, 100, 25);
         add(nomeDevLabel);
 
         nomeDevField = new JTextField();
@@ -40,10 +40,7 @@ public class BootcampView extends JFrame {
 
         conteudosInscritosArea = new JTextArea();
         conteudosInscritosArea.setBounds(10, 90, 360, 150);
-        conteudosInscritosArea.setLineWrap(true);
-        conteudosInscritosArea.setWrapStyleWord(true);
-        add(conteudosInscritosArea);
-
+       
         JScrollPane scrollPane = new JScrollPane(conteudosInscritosArea);
         scrollPane.setBounds(10, 90, 360, 150);
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
@@ -58,8 +55,7 @@ public class BootcampView extends JFrame {
                 Dev dev = new Dev();
                 dev.setNome(nomeDev);
                 dev.inscreverBootcamp(bootcamp);
-
-                conteudosInscritosArea.setText("Nome " + nomeDev + ":\n" + dev.getConteudosInscritos());
+                conteudosInscritosArea.append("Nome " + nomeDev + " " + dev.getConteudosInscritos() + "\n");
             }
         });
     }
