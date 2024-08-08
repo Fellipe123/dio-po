@@ -6,8 +6,8 @@
 
 ### Tela Inicial
 
-![](https://github.com/user-attachments/assets/06208ae0-1550-4a03-b7a7-61b531035d3b)
+![](https://github.com/user-attachments/assets/241bd5ab-0c0a-4d13-bb9d-b495ed43397a)
 
 ### Tela Preenchida
 
-![](https://github.com/user-attachments/assets/41cf90f4-7496-4b12-b7bd-3ade50524773)
+![](https://github.com/user-attachments/assets/84ade696-3792-426b-8f7a-1d819130bf1f)
